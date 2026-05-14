@@ -4,28 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STUDIO [VRY] - Creative Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="noise"></div>
+
     <div class="cursor-blob"></div>
 
-    <div id="cv-overlay" class="cv-modal">
-      <span class="close-cv">&times;</span>
-      <img src="cvfahri1.png" alt="My CV" class="cv-img" />
-    </div>
-
     <nav id="navbar">
-      <div class="logo magnetic" data-strength="20">STUDIO<span>[VRY]</span></div>
+      <div class="logo magnetic" data-strength="20">
+        STUDIO<span>[VRY]</span>
+      </div>
+
       <div class="hamburger" id="hamburger">
         <div class="line"></div>
         <div class="line"></div>
       </div>
+
       <div class="nav-links" id="nav-links">
         <a href="#work" class="magnetic nav-item" data-strength="15">WORK</a>
-        <a href="#about" class="magnetic nav-item" data-strength="15">MANIFESTO</a>
-        <a href="#contact" class="magnetic nav-item" data-strength="15">COMMUNICATE</a>
+        <a href="#about" class="magnetic nav-item" data-strength="15"
+          >MANIFESTO</a
+        >
+        <a href="#contact" class="magnetic nav-item" data-strength="15"
+          >COMMUNICATE</a
+        >
       </div>
     </nav>
 
@@ -44,7 +51,6 @@
         <span>VISUAL IMPACT • CREATIVE TECH • BOLD IDEAS • </span>
         <span>VISUAL IMPACT • CREATIVE TECH • BOLD IDEAS • </span>
         <span>VISUAL IMPACT • CREATIVE TECH • BOLD IDEAS • </span>
-        <span>VISUAL IMPACT • CREATIVE TECH • BOLD IDEAS • </span>
       </div>
     </div>
 
@@ -52,13 +58,17 @@
       <h2 class="section-title">MANIFESTO <span>[INFO]</span></h2>
       <div class="about-content">
         <h3 class="about-headline">
-          I AM A MULTIDISCIPLINARY DESIGNER BLENDING <span class="acid-text">AESTHETICS</span> WITH <span class="acid-text">STRATEGY.</span>
+          I AM A MULTIDISCIPLINARY DESIGNER BLENDING
+          <span class="acid-text">AESTHETICS</span> WITH
+          <span class="acid-text">STRATEGY.</span>
         </h3>
         <div class="about-grid">
-          <div class="about-text-wrapper">
-            <p>I don't just make things look pretty. I build digital experiences, brand identities, and interfaces that refuse to be ignored. My approach combines brutalist impact with meticulous attention to user experience.</p>
-            <button id="open-cv" class="cv-btn magnetic" data-strength="20">VIEW MY CV [PNG]</button>
-          </div>
+          <p>
+            I don't just make things look pretty. I build digital experiences,
+            brand identities, and interfaces that refuse to be ignored. My
+            approach combines brutalist impact with meticulous attention to user
+            experience.
+          </p>
           <ul class="about-services">
             <li>[+] UI/UX DESIGN</li>
             <li>[+] BRAND IDENTITY</li>
@@ -69,50 +79,70 @@
     </section>
 
     <section id="work" class="works-section">
-      <div class="project-bg" id="bg-1" style="background-image: url('porto-fahri.png')"></div>
-      <div class="project-bg" id="bg-2" style="background-image: url('porto-fahri-1.png')"></div>
-      
+      <div
+        class="project-bg"
+        id="bg-1"
+        style="background-image: url(&quot;porto\ fahri.png&quot;)"
+      ></div>
+      <div
+        class="project-bg"
+        id="bg-2"
+        style="background-image: url(&quot;porto\ fahri\ \(1\).png&quot;)"
+      ></div>
+      <!-- <div class="project-bg" id="bg-3" style="background-image: url('https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1600');"></div> -->
+
       <div class="works-container">
-        <h2 class="section-title">INDEX <span>[PROJECTS]</span></h2>
-        
-        <div class="filter-wrapper">
-          <span class="filter-label">SORT BY:</span>
-          <div class="filter-options">
-            <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="poster">POSTER</button>
-            <button class="filter-btn" data-filter="uiux">UI/UX</button>
-            <button class="filter-btn" data-filter="logo">LOGO</button>
-          </div>
-        </div>
+        <h2 class="section-title">INDEX <span>[04]</span></h2>
 
         <div class="project-list">
-          <div class="project-row" data-category="poster" data-bg="bg-1">
+          <div class="project-row" data-bg="bg-1">
             <div class="proj-index">01/</div>
             <h2 class="proj-title">Design Grafis</h2>
             <div class="proj-role">Digital Product</div>
           </div>
-          <div class="project-row" data-category="uiux" data-bg="bg-2">
+          <div class="project-row" data-bg="bg-2">
             <div class="proj-index">02/</div>
             <h2 class="proj-title">UI/UX Website</h2>
             <div class="proj-role">Brand Identity</div>
           </div>
+          <!-- <div class="project-row" data-bg="bg-3">
+                    <div class="proj-index">03/</div>
+                    <h2 class="proj-title">Photography</h2>
+                    <div class="proj-role">Editorial</div>
+                </div> -->
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact-section">
       <h2 class="section-title">COMMUNICATE <span>[LINK]</span></h2>
+
       <div class="contact-circles-container">
         <div class="contact-circle magnetic" data-strength="40">
-          <a href="mailto:riivar43@gmail.com"> INITIATE<br />EMAIL </a>
+          <a href="mailto:hello@studiox.com"> INITIATE<br />EMAIL </a>
         </div>
         <div class="contact-circle magnetic" data-strength="40">
-          <a href="https://wa.me/085158066142" target="_blank"> INITIATE<br />WHATSAPP </a>
+          <a href="https://wa.me/085158066142" target="_blank">
+            INITIATE<br />WHATSAPP
+          </a>
         </div>
       </div>
+
       <div class="social-footer">
-        <a href="https://instagram.com/varnwv" target="_blank" class="magnetic" data-strength="20">INSTAGRAM ↗</a>
-        <a href="https://fiverr.com/varnwv_17" target="_blank" class="magnetic" data-strength="20">FIVERR ↗</a>
+        <a
+          href="https://instagram.com/varnwv"
+          target="_blank"
+          class="magnetic"
+          data-strength="20"
+          >INSTAGRAM ↗</a
+        >
+        <a
+          href="https://fiverr.com/varnwv_17"
+          target="_blank"
+          class="magnetic"
+          data-strength="20"
+          >FIVERR ↗</a
+        >
       </div>
     </section>
 
