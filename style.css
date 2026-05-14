@@ -26,6 +26,48 @@ nav { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width:
 .massive-text { font-family: var(--font-display); font-size: clamp(4rem, 11vw, 12vw); line-height: 0.85; text-align: center; text-transform: uppercase; }
 .outline-text { color: transparent; -webkit-text-stroke: 2px var(--text); }
 
+/* --- KINETIC MARQUEE FIX --- */
+.marquee-container {
+    padding: 20px 0;
+    background: var(--acid);
+    color: var(--bg);
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    /* Efek miring khas brutalist */
+    transform: rotate(-1deg) scale(1.02); 
+    margin: 10vh 0;
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+    z-index: 5;
+}
+
+.marquee {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    /* INI YANG PENTING: Panggil animasi running text */
+    animation: marquee-run 20s linear infinite;
+    will-change: transform;
+}
+
+.marquee span {
+    padding-right: 50px; /* Jarak antar teks */
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+@keyframes marquee-run {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Geser setengah lebar untuk loop sempurna */
+    }
+}
+
 /* Manifesto & CV Button */
 .about-section { padding: 15vh 4vw; }
 .about-headline { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 4.5rem); margin-bottom: 5vh; text-transform: uppercase; line-height: 1.1; }
