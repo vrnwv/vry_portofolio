@@ -90,6 +90,107 @@ nav { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width:
 .project-row { display: flex; align-items: center; justify-content: space-between; padding: 4vh 0; border-bottom: 1px solid rgba(255,255,255,0.1); cursor: pointer; transition: 0.4s; }
 .proj-title { font-family: var(--font-display); font-size: clamp(2rem, 6vw, 8vw); font-weight: 800; text-transform: uppercase; }
 
+/* --- CONTACT SECTION STYLE --- */
+.contact-section {
+    padding: 15vh 4vw 5vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-circles-container {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    flex-grow: 1;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.contact-circle {
+    width: clamp(250px, 28vw, 400px);
+    height: clamp(250px, 28vw, 400px);
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.5s cubic-bezier(0.19, 1, 0.22, 1), 
+                border-color 0.5s ease,
+                transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-circle a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.1;
+    pointer-events: none; /* Biar circle-nya yang nangkep hover */
+}
+
+/* Hover Effect Lingkaran */
+.contact-circle:hover {
+    background: var(--acid);
+    border-color: var(--acid);
+    transform: scale(1.05);
+}
+
+.contact-circle:hover a {
+    color: var(--bg);
+}
+
+/* --- SOCIAL FOOTER --- */
+.social-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 5vh;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: auto;
+}
+
+.social-footer a {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-footer a:hover {
+    color: var(--acid);
+    transform: skewX(-10deg);
+}
+
+/* --- RESPONSIVE CONTACT --- */
+@media (max-width: 768px) {
+    .contact-circles-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-circle {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .social-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; }
