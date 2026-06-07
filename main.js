@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     renderCursor();
 
+    // Termasuk mendeteksi .btn-cv karena menggunakan class .magnetic atau tag <a>
     const hoverTargets = document.querySelectorAll(
-      "a, .project-row, .magnetic",
+      "a, .project-row, .magnetic, .btn-cv",
     );
     hoverTargets.forEach((target) => {
       target.addEventListener("mouseenter", () =>
@@ -112,7 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("active");
     });
 
-    // Tutup menu otomatis saat link diklik (di versi mobile)
     navItems.forEach((item) => {
       item.addEventListener("click", () => {
         hamburger.classList.remove("active");
