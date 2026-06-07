@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     renderCursor();
 
-    // Termasuk mendeteksi .btn-cv karena menggunakan class .magnetic atau tag <a>
     const hoverTargets = document.querySelectorAll(
       "a, .project-row, .magnetic, .btn-cv",
     );
